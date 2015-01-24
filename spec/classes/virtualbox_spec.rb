@@ -10,7 +10,7 @@ describe 'virtualbox' do
   end
   it do
     version = "4.3.20"
-    patch_level = "96966"
+    patch_level = "96996"
     should contain_package("VirtualBox-${version}-${patch_level}").with({
       :ensure   => "installed",
       :source   => "http://download.virtualbox.org/virtualbox/${version}/VirtualBox-${version}-${patch_level}-OSX.dmg",
